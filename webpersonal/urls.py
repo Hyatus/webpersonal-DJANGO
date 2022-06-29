@@ -16,7 +16,14 @@ Including another URLconf
     MANEJA LAS DIRECCIONES"""
 from django.contrib import admin
 from django.urls import path
+from core import views # Importamos las vistas de nuestra app
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.home,name="home"),
+    path('about-me/',views.about,name="about"),
+    path('portfolio/',views.portfolio,name="portfolio"),
+    path('contact/',views.contact,name="contact")
+
+
 ]

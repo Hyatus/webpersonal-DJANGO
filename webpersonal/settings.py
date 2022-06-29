@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+# Django nos permite crear nuestras propias apps
+# Un proyecto contiene múltiples apps y una app puede ser incluída en múltiples proyectos
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -105,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 
