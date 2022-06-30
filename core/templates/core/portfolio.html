@@ -1,7 +1,13 @@
 {% extends 'core/base.html'%}
-{%block title%}
-Portafolio | Mi Web Personal
+{%block title%}Portafolio {%endblock%}
+
+{%block background%}{%load static %}{% static 'core/img/home-bg.jpg' %}{%endblock%}
+
+{%block headers%}
+<h1>Portafolio</h1>
+<span class="subheading">Mis proyectos</span>
 {%endblock%}
+
 {%block content%}
 <h2>Este es mi portafolio</h2>
 
