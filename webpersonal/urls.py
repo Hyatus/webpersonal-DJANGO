@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views # Importamos las vistas de nuestra app
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,3 +28,8 @@ urlpatterns = [
 
 
 ]
+
+
+if settings.DEBUG:
+    from django.conf.urls.static import static # Nos permitirá ver nuestros archivos media 
+    urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
