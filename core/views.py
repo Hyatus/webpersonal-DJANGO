@@ -26,10 +26,6 @@ def about(request):
     # return HttpResponse(html_base + "<h1>Acerca de: </h1><p>Me llamo Cristian y soy programador</p>")
     return render(request,"core/about.html")
 
-def portfolio(request):
-    # return HttpResponse(html_base+"<h2>Este es mi portafolio</h2>")
-    return render(request,"core/portfolio.html")
-
 def contact(request):
     # return HttpResponse(html_base+"<h2>Puden contactarme por aquí</h2>")
     return render(request,"core/contact.html")
